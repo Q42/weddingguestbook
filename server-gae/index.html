@@ -1,0 +1,182 @@
+{% macro displaygreeting(greeting) -%}
+    {% if isAdmin %}
+    <form method="POST">
+      <input name="id" value="{{greeting.key.id()}}" type="hidden" />
+      <select name="sent">
+        {% if greeting.sent %}
+        <option value="True" selected="">already sent</option>
+        <option value="False">still to be sent</option>
+        {% else %}
+        <option value="True">already sent</option>
+        <option value="False" selected="">still to be sent</option>
+        {% endif %}
+      </select>
+      <input name="display_date" value="{{ greeting.display_date.strftime('%Y-%m-%d %H:%M') }}" />
+      <input type="submit" value="update" />
+    </form>
+    {% endif %}
+    <p>
+      <a href="{{greeting.img_url}}"><img src="{{greeting.img_url}}=w384" /></a>
+    </p>
+{%- endmacro %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jaap &amp; Nadia's Little Printer</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	<style>
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+img { max-width: 100%; }
+	</style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+		<h1>Jaap &amp; Nadia's Little Printer</h1>
+        <p class="lead">Op 18 juli 2014 hebben vrienden en familie berichtjes achter gelaten voor jullie. In de loop van het jaar komen deze uit jullie Little Printer rollen, om jullie te herinneren aan de mooiste dag van jullie leven en de mensen die daarbij aanwezig waren!</p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+
+			<p>
+				{% if futureCount > 0 %}
+				<h2>Er staan nog {{ futureCount }} berichten in de wachtrij!</h2>
+				<p></p>
+				{% else %}
+				<h2>Jullie hebben alle berichten gehad :)</h2>
+				<p></p>
+				{% endif %}
+
+				{% for greeting in sent %}
+	        <h4>Verstuurd op {{ greeting.display_date.strftime('%A %e %B %Y') }}</h4>
+          {{ displaygreeting(greeting) }}
+		    {% endfor %}
+
+        {% for greeting in future %}
+
+          <h4>Gaat verstuurd worden op {{ greeting.display_date.strftime('%A %e %B %Y %R') }}</h4>
+          {{ displaygreeting(greeting) }}
+        {% endfor %}
+			</p>
+
+      {% if isAdmin %}
+			<form action="{{ uploadurl }}" enctype="multipart/form-data" method="post">
+				<div><input type="file" name="file"/></div>
+				<div><input type="submit" value="Stuurt op!"></div>
+			</form>
+			{% endif %}
+        </div>
+      </div>
+
+      <div class="footer">
+        <p style="text-align:center;">Groetjes van <a href="http://q42.nl">Q42</a>!</p>
+        <!-- <p>Logged in as {{email}}<a href="{{logouturl}}">Log uit</a></p> -->
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

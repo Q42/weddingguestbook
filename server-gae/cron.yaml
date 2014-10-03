@@ -1,0 +1,4 @@
+cron:
+- description: send one message to little printer
+  url: /cron/sendone
+  schedule: every 30 minutes from 00:03 to 23:59
