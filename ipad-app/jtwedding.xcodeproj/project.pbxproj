@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44E3C242AA02430E828B1696 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66884B05A7BF42C08108151B /* libPods.a */; };
+		5383A8A2197425610061EE80 /* JTSelectTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8A1197425610061EE80 /* JTSelectTypeController.m */; };
+		5383A8A6197514DC0061EE80 /* JTCalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8A5197514DC0061EE80 /* JTCalendarController.m */; };
+		5383A8A9197517AE0061EE80 /* JTPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8A8197517AE0061EE80 /* JTPageController.m */; };
+		5383A8AD197529830061EE80 /* JTSimpleCalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8AC197529830061EE80 /* JTSimpleCalendarController.m */; };
+		5383A8B019755C530061EE80 /* JTConfirmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8AF19755C530061EE80 /* JTConfirmController.m */; };
+		5383A8B3197563EF0061EE80 /* JTTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8B2197563EF0061EE80 /* JTTypeController.m */; };
+		5383A8B6197564A00061EE80 /* JTSelfieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8B5197564A00061EE80 /* JTSelfieController.m */; };
+		5383A8B91975734B0061EE80 /* JTTypeTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8B81975734B0061EE80 /* JTTypeTypeController.m */; };
+		53ACDA17196C449600CB672A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA16196C449600CB672A /* Foundation.framework */; };
+		53ACDA19196C449600CB672A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA18196C449600CB672A /* CoreGraphics.framework */; };
+		53ACDA1B196C449600CB672A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA1A196C449600CB672A /* UIKit.framework */; };
+		53ACDA21196C449600CB672A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53ACDA1F196C449600CB672A /* InfoPlist.strings */; };
+		53ACDA23196C449600CB672A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA22196C449600CB672A /* main.m */; };
+		53ACDA27196C449600CB672A /* JTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA26196C449600CB672A /* JTAppDelegate.m */; };
+		53ACDA2D196C449600CB672A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53ACDA2B196C449600CB672A /* Main_iPad.storyboard */; };
+		53ACDA30196C449600CB672A /* JTDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA2F196C449600CB672A /* JTDrawController.m */; };
+		53ACDA32196C449600CB672A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53ACDA31196C449600CB672A /* Images.xcassets */; };
+		53ACDA39196C449600CB672A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA38196C449600CB672A /* XCTest.framework */; };
+		53ACDA3A196C449600CB672A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA16196C449600CB672A /* Foundation.framework */; };
+		53ACDA3B196C449600CB672A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA1A196C449600CB672A /* UIKit.framework */; };
+		53ACDA43196C449600CB672A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53ACDA41196C449600CB672A /* InfoPlist.strings */; };
+		53ACDA45196C449600CB672A /* jtweddingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA44196C449600CB672A /* jtweddingTests.m */; };
+		53ACDA55196C460400CB672A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA54196C460400CB672A /* AssetsLibrary.framework */; };
+		53ACDA74196C526200CB672A /* DICanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA73196C526200CB672A /* DICanvasView.m */; };
+		53ACDA7E196C528700CB672A /* DIAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA77196C528700CB672A /* DIAction.m */; };
+		53ACDA7F196C528700CB672A /* DIDrawAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA79196C528700CB672A /* DIDrawAction.m */; };
+		53ACDA80196C528700CB672A /* DIPointBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA7B196C528700CB672A /* DIPointBundle.m */; };
+		53ACDA81196C528700CB672A /* DIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA7D196C528700CB672A /* DIBezierPath.m */; };
+		53ACDA85196C529B00CB672A /* UIBezierPath+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACDA84196C529B00CB672A /* UIBezierPath+Utils.m */; };
+		53ACDA87196C76E100CB672A /* JotTouchSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA86196C76E100CB672A /* JotTouchSDK.framework */; };
+		53ACDA89196C797600CB672A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA88196C797600CB672A /* CoreMotion.framework */; };
+		53ACDA8B196C797B00CB672A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ACDA8A196C797B00CB672A /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53ACDA3C196C449600CB672A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53ACDA0B196C449600CB672A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53ACDA12196C449600CB672A;
+			remoteInfo = jtwedding;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5383A8A0197425610061EE80 /* JTSelectTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSelectTypeController.h; sourceTree = "<group>"; };
+		5383A8A1197425610061EE80 /* JTSelectTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSelectTypeController.m; sourceTree = "<group>"; };
+		5383A8A4197514DC0061EE80 /* JTCalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarController.h; sourceTree = "<group>"; };
+		5383A8A5197514DC0061EE80 /* JTCalendarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarController.m; sourceTree = "<group>"; };
+		5383A8A7197517AE0061EE80 /* JTPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPageController.h; sourceTree = "<group>"; };
+		5383A8A8197517AE0061EE80 /* JTPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPageController.m; sourceTree = "<group>"; };
+		5383A8AB197529830061EE80 /* JTSimpleCalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSimpleCalendarController.h; sourceTree = "<group>"; };
+		5383A8AC197529830061EE80 /* JTSimpleCalendarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSimpleCalendarController.m; sourceTree = "<group>"; };
+		5383A8AE19755C530061EE80 /* JTConfirmController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTConfirmController.h; sourceTree = "<group>"; };
+		5383A8AF19755C530061EE80 /* JTConfirmController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTConfirmController.m; sourceTree = "<group>"; };
+		5383A8B1197563EF0061EE80 /* JTTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTypeController.h; sourceTree = "<group>"; };
+		5383A8B2197563EF0061EE80 /* JTTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTypeController.m; sourceTree = "<group>"; };
+		5383A8B4197564A00061EE80 /* JTSelfieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSelfieController.h; sourceTree = "<group>"; };
+		5383A8B5197564A00061EE80 /* JTSelfieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSelfieController.m; sourceTree = "<group>"; };
+		5383A8B71975734B0061EE80 /* JTTypeTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTTypeTypeController.h; sourceTree = "<group>"; };
+		5383A8B81975734B0061EE80 /* JTTypeTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTTypeTypeController.m; sourceTree = "<group>"; };
+		53ACDA13196C449600CB672A /* jtwedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jtwedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53ACDA16196C449600CB672A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53ACDA18196C449600CB672A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		53ACDA1A196C449600CB672A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53ACDA1E196C449600CB672A /* jtwedding-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jtwedding-Info.plist"; sourceTree = "<group>"; };
+		53ACDA20196C449600CB672A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53ACDA22196C449600CB672A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53ACDA24196C449600CB672A /* jtwedding-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jtwedding-Prefix.pch"; sourceTree = "<group>"; };
+		53ACDA25196C449600CB672A /* JTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTAppDelegate.h; sourceTree = "<group>"; };
+		53ACDA26196C449600CB672A /* JTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTAppDelegate.m; sourceTree = "<group>"; };
+		53ACDA2C196C449600CB672A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		53ACDA2E196C449600CB672A /* JTDrawController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTDrawController.h; sourceTree = "<group>"; };
+		53ACDA2F196C449600CB672A /* JTDrawController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTDrawController.m; sourceTree = "<group>"; };
+		53ACDA31196C449600CB672A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		53ACDA37196C449600CB672A /* jtweddingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jtweddingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53ACDA38196C449600CB672A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		53ACDA40196C449600CB672A /* jtweddingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jtweddingTests-Info.plist"; sourceTree = "<group>"; };
+		53ACDA42196C449600CB672A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53ACDA44196C449600CB672A /* jtweddingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jtweddingTests.m; sourceTree = "<group>"; };
+		53ACDA54196C460400CB672A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		53ACDA72196C526200CB672A /* DICanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DICanvasView.h; sourceTree = "<group>"; };
+		53ACDA73196C526200CB672A /* DICanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DICanvasView.m; sourceTree = "<group>"; };
+		53ACDA76196C528700CB672A /* DIAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIAction.h; sourceTree = "<group>"; };
+		53ACDA77196C528700CB672A /* DIAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIAction.m; sourceTree = "<group>"; };
+		53ACDA78196C528700CB672A /* DIDrawAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIDrawAction.h; sourceTree = "<group>"; };
+		53ACDA79196C528700CB672A /* DIDrawAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIDrawAction.m; sourceTree = "<group>"; };
+		53ACDA7A196C528700CB672A /* DIPointBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIPointBundle.h; sourceTree = "<group>"; };
+		53ACDA7B196C528700CB672A /* DIPointBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIPointBundle.m; sourceTree = "<group>"; };
+		53ACDA7C196C528700CB672A /* DIBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIBezierPath.h; sourceTree = "<group>"; };
+		53ACDA7D196C528700CB672A /* DIBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIBezierPath.m; sourceTree = "<group>"; };
+		53ACDA83196C529B00CB672A /* UIBezierPath+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Utils.h"; sourceTree = "<group>"; };
+		53ACDA84196C529B00CB672A /* UIBezierPath+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Utils.m"; sourceTree = "<group>"; };
+		53ACDA86196C76E100CB672A /* JotTouchSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JotTouchSDK.framework; sourceTree = "<group>"; };
+		53ACDA88196C797600CB672A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		53ACDA8A196C797B00CB672A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		66884B05A7BF42C08108151B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9043E599C3F2AF7DEFB0D52A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E40CF9B4D1031F35CDE718B7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53ACDA10196C449600CB672A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ACDA8B196C797B00CB672A /* CoreBluetooth.framework in Frameworks */,
+				53ACDA89196C797600CB672A /* CoreMotion.framework in Frameworks */,
+				53ACDA55196C460400CB672A /* AssetsLibrary.framework in Frameworks */,
+				53ACDA19196C449600CB672A /* CoreGraphics.framework in Frameworks */,
+				53ACDA1B196C449600CB672A /* UIKit.framework in Frameworks */,
+				53ACDA17196C449600CB672A /* Foundation.framework in Frameworks */,
+				44E3C242AA02430E828B1696 /* libPods.a in Frameworks */,
+				53ACDA87196C76E100CB672A /* JotTouchSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ACDA34196C449600CB672A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ACDA39196C449600CB672A /* XCTest.framework in Frameworks */,
+				53ACDA3B196C449600CB672A /* UIKit.framework in Frameworks */,
+				53ACDA3A196C449600CB672A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5383A8A3197425840061EE80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5383A8A4197514DC0061EE80 /* JTCalendarController.h */,
+				5383A8A5197514DC0061EE80 /* JTCalendarController.m */,
+				53ACDA2E196C449600CB672A /* JTDrawController.h */,
+				53ACDA2F196C449600CB672A /* JTDrawController.m */,
+				5383A8A7197517AE0061EE80 /* JTPageController.h */,
+				5383A8A8197517AE0061EE80 /* JTPageController.m */,
+				5383A8A0197425610061EE80 /* JTSelectTypeController.h */,
+				5383A8A1197425610061EE80 /* JTSelectTypeController.m */,
+				5383A8AB197529830061EE80 /* JTSimpleCalendarController.h */,
+				5383A8AC197529830061EE80 /* JTSimpleCalendarController.m */,
+				5383A8AE19755C530061EE80 /* JTConfirmController.h */,
+				5383A8AF19755C530061EE80 /* JTConfirmController.m */,
+				5383A8B1197563EF0061EE80 /* JTTypeController.h */,
+				5383A8B2197563EF0061EE80 /* JTTypeController.m */,
+				5383A8B4197564A00061EE80 /* JTSelfieController.h */,
+				5383A8B5197564A00061EE80 /* JTSelfieController.m */,
+				5383A8B71975734B0061EE80 /* JTTypeTypeController.h */,
+				5383A8B81975734B0061EE80 /* JTTypeTypeController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		53ACDA0A196C449600CB672A = {
+			isa = PBXGroup;
+			children = (
+				53ACDA1C196C449600CB672A /* jtwedding */,
+				53ACDA3E196C449600CB672A /* jtweddingTests */,
+				53ACDA15196C449600CB672A /* Frameworks */,
+				53ACDA14196C449600CB672A /* Products */,
+				65BD2DE3AE4D64DA2E0100B7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		53ACDA14196C449600CB672A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53ACDA13196C449600CB672A /* jtwedding.app */,
+				53ACDA37196C449600CB672A /* jtweddingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53ACDA15196C449600CB672A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53ACDA8A196C797B00CB672A /* CoreBluetooth.framework */,
+				53ACDA88196C797600CB672A /* CoreMotion.framework */,
+				53ACDA86196C76E100CB672A /* JotTouchSDK.framework */,
+				53ACDA54196C460400CB672A /* AssetsLibrary.framework */,
+				53ACDA16196C449600CB672A /* Foundation.framework */,
+				53ACDA18196C449600CB672A /* CoreGraphics.framework */,
+				53ACDA1A196C449600CB672A /* UIKit.framework */,
+				53ACDA38196C449600CB672A /* XCTest.framework */,
+				66884B05A7BF42C08108151B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53ACDA1C196C449600CB672A /* jtwedding */ = {
+			isa = PBXGroup;
+			children = (
+				5383A8A3197425840061EE80 /* Controller */,
+				53ACDA82196C529600CB672A /* Categories */,
+				53ACDA75196C528000CB672A /* Model */,
+				53ACDA71196C525C00CB672A /* View */,
+				53ACDA25196C449600CB672A /* JTAppDelegate.h */,
+				53ACDA26196C449600CB672A /* JTAppDelegate.m */,
+				53ACDA2B196C449600CB672A /* Main_iPad.storyboard */,
+				53ACDA31196C449600CB672A /* Images.xcassets */,
+				53ACDA1D196C449600CB672A /* Supporting Files */,
+			);
+			path = jtwedding;
+			sourceTree = "<group>";
+		};
+		53ACDA1D196C449600CB672A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53ACDA1E196C449600CB672A /* jtwedding-Info.plist */,
+				53ACDA1F196C449600CB672A /* InfoPlist.strings */,
+				53ACDA22196C449600CB672A /* main.m */,
+				53ACDA24196C449600CB672A /* jtwedding-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53ACDA3E196C449600CB672A /* jtweddingTests */ = {
+			isa = PBXGroup;
+			children = (
+				53ACDA44196C449600CB672A /* jtweddingTests.m */,
+				53ACDA3F196C449600CB672A /* Supporting Files */,
+			);
+			path = jtweddingTests;
+			sourceTree = "<group>";
+		};
+		53ACDA3F196C449600CB672A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53ACDA40196C449600CB672A /* jtweddingTests-Info.plist */,
+				53ACDA41196C449600CB672A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53ACDA71196C525C00CB672A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53ACDA72196C526200CB672A /* DICanvasView.h */,
+				53ACDA73196C526200CB672A /* DICanvasView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		53ACDA75196C528000CB672A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53ACDA76196C528700CB672A /* DIAction.h */,
+				53ACDA77196C528700CB672A /* DIAction.m */,
+				53ACDA78196C528700CB672A /* DIDrawAction.h */,
+				53ACDA79196C528700CB672A /* DIDrawAction.m */,
+				53ACDA7A196C528700CB672A /* DIPointBundle.h */,
+				53ACDA7B196C528700CB672A /* DIPointBundle.m */,
+				53ACDA7C196C528700CB672A /* DIBezierPath.h */,
+				53ACDA7D196C528700CB672A /* DIBezierPath.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		53ACDA82196C529600CB672A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				53ACDA83196C529B00CB672A /* UIBezierPath+Utils.h */,
+				53ACDA84196C529B00CB672A /* UIBezierPath+Utils.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		65BD2DE3AE4D64DA2E0100B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E40CF9B4D1031F35CDE718B7 /* Pods.debug.xcconfig */,
+				9043E599C3F2AF7DEFB0D52A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53ACDA12196C449600CB672A /* jtwedding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53ACDA48196C449600CB672A /* Build configuration list for PBXNativeTarget "jtwedding" */;
+			buildPhases = (
+				D435FEC58E5040C99E1B1BD2 /* Check Pods Manifest.lock */,
+				53ACDA0F196C449600CB672A /* Sources */,
+				53ACDA10196C449600CB672A /* Frameworks */,
+				53ACDA11196C449600CB672A /* Resources */,
+				821DD39C3B1A4624A9A59935 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jtwedding;
+			productName = jtwedding;
+			productReference = 53ACDA13196C449600CB672A /* jtwedding.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53ACDA36196C449600CB672A /* jtweddingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53ACDA4B196C449600CB672A /* Build configuration list for PBXNativeTarget "jtweddingTests" */;
+			buildPhases = (
+				53ACDA33196C449600CB672A /* Sources */,
+				53ACDA34196C449600CB672A /* Frameworks */,
+				53ACDA35196C449600CB672A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53ACDA3D196C449600CB672A /* PBXTargetDependency */,
+			);
+			name = jtweddingTests;
+			productName = jtweddingTests;
+			productReference = 53ACDA37196C449600CB672A /* jtweddingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53ACDA0B196C449600CB672A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Q42;
+				TargetAttributes = {
+					53ACDA36196C449600CB672A = {
+						TestTargetID = 53ACDA12196C449600CB672A;
+					};
+				};
+			};
+			buildConfigurationList = 53ACDA0E196C449600CB672A /* Build configuration list for PBXProject "jtwedding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53ACDA0A196C449600CB672A;
+			productRefGroup = 53ACDA14196C449600CB672A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53ACDA12196C449600CB672A /* jtwedding */,
+				53ACDA36196C449600CB672A /* jtweddingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53ACDA11196C449600CB672A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ACDA2D196C449600CB672A /* Main_iPad.storyboard in Resources */,
+				53ACDA32196C449600CB672A /* Images.xcassets in Resources */,
+				53ACDA21196C449600CB672A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ACDA35196C449600CB672A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ACDA43196C449600CB672A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		821DD39C3B1A4624A9A59935 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D435FEC58E5040C99E1B1BD2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53ACDA0F196C449600CB672A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5383A8B019755C530061EE80 /* JTConfirmController.m in Sources */,
+				5383A8A9197517AE0061EE80 /* JTPageController.m in Sources */,
+				53ACDA74196C526200CB672A /* DICanvasView.m in Sources */,
+				5383A8B3197563EF0061EE80 /* JTTypeController.m in Sources */,
+				53ACDA27196C449600CB672A /* JTAppDelegate.m in Sources */,
+				5383A8AD197529830061EE80 /* JTSimpleCalendarController.m in Sources */,
+				53ACDA7E196C528700CB672A /* DIAction.m in Sources */,
+				5383A8A2197425610061EE80 /* JTSelectTypeController.m in Sources */,
+				53ACDA30196C449600CB672A /* JTDrawController.m in Sources */,
+				5383A8B6197564A00061EE80 /* JTSelfieController.m in Sources */,
+				5383A8B91975734B0061EE80 /* JTTypeTypeController.m in Sources */,
+				53ACDA81196C528700CB672A /* DIBezierPath.m in Sources */,
+				53ACDA7F196C528700CB672A /* DIDrawAction.m in Sources */,
+				53ACDA85196C529B00CB672A /* UIBezierPath+Utils.m in Sources */,
+				53ACDA23196C449600CB672A /* main.m in Sources */,
+				5383A8A6197514DC0061EE80 /* JTCalendarController.m in Sources */,
+				53ACDA80196C528700CB672A /* DIPointBundle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ACDA33196C449600CB672A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ACDA45196C449600CB672A /* jtweddingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53ACDA3D196C449600CB672A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53ACDA12196C449600CB672A /* jtwedding */;
+			targetProxy = 53ACDA3C196C449600CB672A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53ACDA1F196C449600CB672A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53ACDA20196C449600CB672A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53ACDA2B196C449600CB672A /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53ACDA2C196C449600CB672A /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		53ACDA41196C449600CB672A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53ACDA42196C449600CB672A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53ACDA46196C449600CB672A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53ACDA47196C449600CB672A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53ACDA49196C449600CB672A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40CF9B4D1031F35CDE718B7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jtwedding/jtwedding-Prefix.pch";
+				INFOPLIST_FILE = "jtwedding/jtwedding-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53ACDA4A196C449600CB672A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9043E599C3F2AF7DEFB0D52A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jtwedding/jtwedding-Prefix.pch";
+				INFOPLIST_FILE = "jtwedding/jtwedding-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		53ACDA4C196C449600CB672A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/jtwedding.app/jtwedding";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jtwedding/jtwedding-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "jtweddingTests/jtweddingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		53ACDA4D196C449600CB672A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/jtwedding.app/jtwedding";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jtwedding/jtwedding-Prefix.pch";
+				INFOPLIST_FILE = "jtweddingTests/jtweddingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53ACDA0E196C449600CB672A /* Build configuration list for PBXProject "jtwedding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53ACDA46196C449600CB672A /* Debug */,
+				53ACDA47196C449600CB672A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53ACDA48196C449600CB672A /* Build configuration list for PBXNativeTarget "jtwedding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53ACDA49196C449600CB672A /* Debug */,
+				53ACDA4A196C449600CB672A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53ACDA4B196C449600CB672A /* Build configuration list for PBXNativeTarget "jtweddingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53ACDA4C196C449600CB672A /* Debug */,
+				53ACDA4D196C449600CB672A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53ACDA0B196C449600CB672A /* Project object */;
+}

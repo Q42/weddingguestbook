@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>19401E3E-960A-418B-AACE-F538060A3382</string>
+	<key>IDESourceControlProjectName</key>
+	<string>jtwedding</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5D3571DB3E0C802550AB9BD7AE51889AD0A9B412</key>
+		<string>ssh://bitbucket.org/m0rph3v5/jtwedding.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>jtwedding.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5D3571DB3E0C802550AB9BD7AE51889AD0A9B412</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/m0rph3v5/jtwedding.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5D3571DB3E0C802550AB9BD7AE51889AD0A9B412</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5D3571DB3E0C802550AB9BD7AE51889AD0A9B412</string>
+			<key>IDESourceControlWCCName</key>
+			<string>jtwedding</string>
+		</dict>
+	</array>
+</dict>
+</plist>

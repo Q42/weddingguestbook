@@ -1,0 +1,5 @@
+pod 'AFNetworking', '~> 2.3'
+pod 'FlatUIKit', :head
+pod 'FontAwesomeKit', '~> 2.1'
+pod 'PDTSimpleCalendar', '~> 0.7.0'
+pod 'GPUImage', '0.1.2'
